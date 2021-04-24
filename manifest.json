@@ -1,0 +1,6 @@
+{
+    "name": "YouTube Native Resolution",
+    "description": "While watching YouTube, gives a one click button to scale the window to the native resolution",
+    "version": "0.1.0",
+    "manifest_version": 3
+}
