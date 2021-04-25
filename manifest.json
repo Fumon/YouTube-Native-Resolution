@@ -1,7 +1,7 @@
 {
     "name": "YouTube Native Resolution",
-    "description": "While watching YouTube, gives a one click button to scale the window to the native resolution",
-    "version": "0.1.0",
+    "description": "While watching YouTube, scales the browser window to show the video at its native resolution",
+    "version": "0.2.0",
     "manifest_version": 3,
 
     "action": {
