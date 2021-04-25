@@ -1,0 +1,25 @@
+
+
+
+/* Nice little place for wingdings*/
+.res::before {
+    content: "⦕";
+}
+.res::after {
+    content: "⦖";
+}
+
+#tabSize::before {
+    content: "T: "
+}
+#browserSize::before {
+    content: "B: "
+}
+
+
+/* General button styling */
+
+button:hover {
+    box-shadow: 0 0 0 2px white,
+                0 0 0 4px black;
+}

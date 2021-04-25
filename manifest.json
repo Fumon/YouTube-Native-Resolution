@@ -5,6 +5,9 @@
     "manifest_version": 3,
 
     "action": {
+        "default_popup": "button/m.html",
         "default_title": "Size to Video"
-    }
+    },
+
+    "permissions" : ["activeTab"]
 }
