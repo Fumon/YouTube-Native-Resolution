@@ -1,0 +1,30 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Package the Extension
+
+on:
+  push:
+    tags: 
+      - "v*"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  package:
+    name: Package for release
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Zip files
+        run: zip -r YouTube-Native-Resolution.zip . -x ".git/*" ".github/*" "readme.md"
+      
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          files: |
+            *.zip
